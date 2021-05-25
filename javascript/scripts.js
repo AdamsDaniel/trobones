@@ -1,4 +1,4 @@
-src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js";
 
 $(function () {
     var image = $(".mainmenu").find('img').attr('src');

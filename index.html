@@ -1,240 +1,253 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-<link href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="css/style.css" />
   <title>build a Product Landing Page - freecodecamp</title>
-<style>body {
-  background-color: #f0f8ff;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-}
+  <style>
+    body {
+      background-color: #f0f8ff;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Lato', sans-serif;
+    }
 
-header {
-  position: fixed;
-  width: 100%;
-  background-color: #A8E6CF;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  padding-top: 5px;
-  box-shadow:0px 1px 2px 1px#8b8b8b;
-}
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: #A8E6CF;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      padding-top: 5px;
+      box-shadow: 0px 1px 2px 1px#8b8b8b;
+    }
 
-main {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  max-width: 750px;
-  position: relative;
-  top: 40px;
-  z-index: 0;
-}
+    main {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 750px;
+      position: relative;
+      top: 40px;
+      z-index: 0;
+    }
 
-#header-img {
-  grid-column: 1;
-  width: 100%;
-  align-self: center;
-  margin-top:7px;
-  margin-bottom:7px;
-}
+    #header-img {
+      grid-column: 1;
+      width: 100%;
+      align-self: center;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
 
-#nav-bar {
-  grid-column: 7;
-  align-self: center;
-  justify-self: left;
-  display: felx;
-  margin-right: 1px;
-}
+    #nav-bar {
+      grid-column: 7;
+      align-self: center;
+      justify-self: left;
+      display: felx;
+      margin-right: 1px;
+    }
 
-.nav-link {
-  text-decoration: none;
-  /*color: ;*/
-  margin: 30px;
-}
+    .nav-link {
+      text-decoration: none;
+      /*color: ;*/
+      margin: 30px;
+    }
 
-#features {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+    #features {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-#opcoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin-top: 20px;
-}
-.opcoes-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-style: groove;
-  border-color: lightgray;
-  border-width: 1px;
-  padding-bottom: 10px;
- }
-.opcoes-header {
-  margin-bottom: -10px;
-  width:100%;
-  background-color:#d3f2e6;
-  text-align:center;
-}
-.opcoes-preco {
-  font-size: 130%;
-  font-weight: bold;
-  text-align: center;
-}
-.opcao-desc {
-  list-style: none;
-}
+    #opcoes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      margin-top: 20px;
+    }
 
-/*.lista {
+    .opcoes-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-style: groove;
+      border-color: lightgray;
+      border-width: 1px;
+      padding-bottom: 10px;
+    }
+
+    .opcoes-header {
+      margin-bottom: -10px;
+      width: 100%;
+      background-color: #d3f2e6;
+      text-align: center;
+    }
+
+    .opcoes-preco {
+      font-size: 130%;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .opcao-desc {
+      list-style: none;
+    }
+
+    /*.lista {
 }*/
 
-#centro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/*email*/
-#centro input[type="email"]{
-    border-radius:0px;
-    -webkit-box-radius:0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    box-shadow: 1px 1px 2px #8b8b8b;    
-    -moz-box-shadow: 1px 1px 2px #8b8b8b;
-    -webkit-box-shadow: 1px 1px 2px #8b8b8b;
-    background: white;
-    border:none;
-    width:200%;
-    max-width:275px;
-  /*??*/
-    position:relative;
-    left:-34% ;
-}
+    #centro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-#email{
-  text-align:center;
-  text-transform:capitalize;
-}
+    /*email*/
+    #centro input[type="email"] {
+      border-radius: 0px;
+      -webkit-box-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      -o-border-radius: 0px;
+      box-shadow: 1px 1px 2px #8b8b8b;
+      -moz-box-shadow: 1px 1px 2px #8b8b8b;
+      -webkit-box-shadow: 1px 1px 2px #8b8b8b;
+      background: white;
+      border: none;
+      width: 200%;
+      max-width: 275px;
+      /*??*/
+      position: relative;
+      left: -34%;
+    }
 
-#form {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-}
+    #email {
+      text-align: center;
+      text-transform: capitalize;
+    }
 
-#video {
-  margin: auto;
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+    #form {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+    }
 
-footer {
-  background-color: #A8E6CF;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 10px;
-  padding-bottom: 0px;
-  box-shadow: 1px 1px 2px 1px #8b8b8b;
-}
+    #video {
+      margin: auto;
+      max-width: 100%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
 
-#footer-nav {
-  display: flex;
-  grid-gap: 10px;
-}
+    footer {
+      background-color: #A8E6CF;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 10px;
+      padding-bottom: 0px;
+      box-shadow: 1px 1px 2px 1px #8b8b8b;
+    }
 
-.nav-link-foot{
-  margin:2px;
-}
+    #footer-nav {
+      display: flex;
+      grid-gap: 10px;
+    }
 
-footer p {
-  font-size: 85%;
-  color: gray;
-  margin-bottom: 10px;
-}
+    .nav-link-foot {
+      margin: 2px;
+    }
 
-.btn {
-  border: none;
-  background-color: #6dd5ae;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 0.6rem 1.5rem;
-  cursor: pointer;
-  font-weight: bold;
-  -moz-box-shadow: 1px 1px 2px 1px #8b8b8b;
-  -webkit-box-shadow: 1px 1px 2px 1px #8b8b8b;
-  box-shadow: 1px 1px 2px 1px #8b8b8b;
-}
+    footer p {
+      font-size: 85%;
+      color: gray;
+      margin-bottom: 10px;
+    }
 
-.btn:hover {
-  cursor:pointer;
-}
+    .btn {
+      border: none;
+      background-color: #6dd5ae;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      padding: 0.6rem 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      -moz-box-shadow: 1px 1px 2px 1px #8b8b8b;
+      -webkit-box-shadow: 1px 1px 2px 1px #8b8b8b;
+      box-shadow: 1px 1px 2px 1px #8b8b8b;
+    }
 
-.btn:active{
-  transform:scale(0.97);
-  opacity:0.77;
-}
+    .btn:hover {
+      cursor: pointer;
+    }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}</style> 
+    .btn:active {
+      transform: scale(0.97);
+      opacity: 0.77;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <header id="header">
-    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo" id="header-img">
+    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo"
+      id="header-img">
     <nav id="nav-bar">
       <a href="#features" class="nav-link" id='bora'>Recursos</a>
       <a href="#video" class="nav-link" id='bora'>Como funciona</a>
       <a href="#opcoes" class="nav-link" id='bora'>Preços</a>
     </nav>
   </header>
-  
+
   <main>
     <article id="centro">
-      <h2>Obras-primas,  feitas a mão</h2>
+      <h2>Obras-primas, feitas a mão</h2>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email" name="email" id='email' placeholder="Insira seu Email" required></input>
         <input type="submit" id="submit" value="Get Started" class="btn">
       </form>
     </article>
-  
+
     <article id="features">
       <section class="">
         <div>
           <h2>Materiais de Alta Qualidade</h2>
-          <p>Nossos trombones usam o latão mais brilhante de origem local. Isso aumentará a longevidade de sua compra.</p>
+          <p>Nossos trombones usam o latão mais brilhante de origem local. Isso aumentará a longevidade de sua compra.
+          </p>
         </div>
       </section>
       <section class="">
         <div>
           <h2>Entrega Rápida</h2>
-          <p>Asseguramos que você receberá seu trombone assim que terminarmos de fazê-lo. Também fornecemos devoluções gratuitas se você não estiver satisfeito.</p>
+          <p>Asseguramos que você receberá seu trombone assim que terminarmos de fazê-lo. Também fornecemos devoluções
+            gratuitas se você não estiver satisfeito.</p>
         </div>
       </section>
       <section class="">
         <div>
           <h2>Garantia da Qualidade</h2>
-          <p>Para cada compra que você fizer, garantiremos que não haja danos ou falhas e verificaremos e testaremos a inclinação do seu instrumento.</p>
+          <p>Para cada compra que você fizer, garantiremos que não haja danos ou falhas e verificaremos e testaremos a
+            inclinação do seu instrumento.</p>
         </div>
       </section>
     </article>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
-  
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video"
+      allowfullscreen></iframe>
+
     <article id="opcoes">
       <section class="opcoes-section">
         <div class="opcoes-header">
@@ -284,9 +297,9 @@ footer p {
         <button class="btn">selecionar</button>
       </section>
     </article>
-  
+
   </main>
-  
+
   <footer>
     <nav id="footer-nav">
       <a href="" class="nav-link-foot">Privacidade</a>
